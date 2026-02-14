@@ -57,14 +57,25 @@ class _PassState extends State<Pass> {
         backgroundColor: Colors.blueGrey[800],
         elevation: 0,
         centerTitle: true,
-        title: const Text(
-          "PassFortress",
-          style: TextStyle(
-            fontSize: 22,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 1.2,
-          ),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Icon(
+              Icons.lock_outline,
+              color: Colors.white,
+              size: 22,
+            ),
+            SizedBox(width: 8),
+            Text(
+              "PassFortress",
+              style: TextStyle(
+                fontSize: 22,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.2,
+              ),
+            ),
+          ],
         ),
       ),
       body: Padding(
