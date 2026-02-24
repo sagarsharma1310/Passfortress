@@ -175,6 +175,10 @@ class _PassState extends State<Pass> {
 
             const SizedBox(height: 30),
 
+
+
+
+
             const Text(
               "Password Guidelines",
               style: TextStyle(
